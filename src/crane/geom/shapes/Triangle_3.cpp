@@ -1,7 +1,7 @@
 
 #include "Triangle_3.hpp"
 
-#include "crane/geom/numerics/Vector_3.hpp"
+#include "crane/geom/kernel.hpp"
 
 
 crane::geom::Vector_3

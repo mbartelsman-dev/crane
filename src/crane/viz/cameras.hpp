@@ -30,7 +30,7 @@ struct Base_Camera
     union
     {
         Fp_T _field_of_view { };
-        Fp_T _view_width { };
+        Fp_T _view_width;
     };
 
 

@@ -107,7 +107,8 @@ add_library(${PROJECT_NAME} STATIC
         src/crane/viz/Visualizer.hpp
         src/crane/viz/cameras.cpp
         src/crane/viz/cameras.hpp
-        src/main.cpp
+        src/crane/geom/shapes/Bounding_Box_2.hpp
+        src/crane/geom/shapes/Bounding_Box_2.cpp
 )
 
 add_library(${PROJECT_NAMESPACE} ALIAS ${PROJECT_NAME})
@@ -126,6 +127,8 @@ set_target_properties(${PROJECT_NAME}
         VERSION                 ${PROJECT_VERSION}
 )
 
+add_executable(${PROJECT_NAME}_launch src/main.cpp)
+
 #
 # Dependencies
 # -----------------------------------------------------------------------------
@@ -142,4 +145,6 @@ add_git_library(
         https://github.com/raysan5/raylib.git
         5.0
 )
-target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
+target_link_libraries(${PROJECT_NAME}_launch PRIVATE
+        ${PROJECT_NAMESPACE}
+        raylib)

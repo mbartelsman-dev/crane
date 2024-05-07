@@ -2,7 +2,7 @@
 #pragma once
 #define CRANE_HEADER_CONTENTS
 
-#include "crane/geom/numerics/Point_3.hpp"
+#include "crane/geom/kernel.hpp"
 
 namespace crane::geom
 {
