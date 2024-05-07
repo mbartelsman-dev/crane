@@ -36,7 +36,6 @@ add_library(${PROJECT_NAME} STATIC
         include/crane/meta/tmp.hpp
         include/crane/numbers/limits.hpp
         include/crane/numbers/math.hpp
-        src/crane/geom/_fwd.hpp
         src/crane/geom/kernel.hpp
         src/crane/geom/kernel/Angle.cpp
         src/crane/geom/kernel/Angle.hpp

@@ -7,7 +7,7 @@ namespace crane::geom
 struct Circle;
 struct Sphere;
 
-struct Triangle;
+struct Triangle_2;
 struct Triangle_3;
 
 struct Rectangle;
